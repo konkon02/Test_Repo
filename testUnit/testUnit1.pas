@@ -37,6 +37,9 @@ begin
 
 
     //test
+
+    //コミットテスト
+
     // Button1を押下するとCaptinoをカウント
     // 以下は上記コードを１行にまとめたコード
     Button1.Caption := IntToStr(StrToInt(Button1.Caption)+1);
