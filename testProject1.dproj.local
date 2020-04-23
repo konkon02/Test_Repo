@@ -2,8 +2,14 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2020/04/21 13:59:18.000.522,=C:\Users\kon26\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2020/04/21 14:47:57.000.139,C:\![business]\202004～_自宅学習\Delphi\workspace\testUnit\testUnit1.dfm=C:\Users\kon26\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2020/04/21 14:47:57.000.139,C:\![business]\202004～_自宅学習\Delphi\workspace\testUnit\testUnit1.pas=C:\Users\kon26\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2020/04/21 14:48:18.000.442,C:\![business]\202004～_自宅学習\Delphi\workspace\testProject1.dproj=C:\Users\kon26\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/04/21 14:47:57.000.139,C:\Users\kon26\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\![business]\202004～_自宅学習\Delphi\workspace\testUnit\testUnit1.dfm</Transaction>
+    <Transaction>2020/04/21 14:47:57.000.139,C:\Users\kon26\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\![business]\202004～_自宅学習\Delphi\workspace\testUnit\testUnit1.pas</Transaction>
+    <Transaction>2020/04/21 14:48:18.000.442,C:\Users\kon26\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\![business]\202004～_自宅学習\Delphi\workspace\testProject1.dproj</Transaction>
+    <Transaction>2020/04/22 14:59:12.904,=C:\![business]\202004～_自宅学習\Delphi\workspace\Unit2.pas</Transaction>
+    <Transaction>2020/04/22 15:03:57.037,C:\![business]\202004～_自宅学習\Delphi\workspace\testUnit2\Unit2.pas=C:\![business]\202004～_自宅学習\Delphi\workspace\Unit2.pas</Transaction>
+    <Transaction>2020/04/22 15:03:57.037,C:\![business]\202004～_自宅学習\Delphi\workspace\testUnit2\Unit2.dfm=C:\![business]\202004～_自宅学習\Delphi\workspace\Unit2.dfm</Transaction>
+    <Transaction>2020/04/22 15:40:53.533,=C:\![business]\202004～_自宅学習\Delphi\workspace\Unit3.pas</Transaction>
+    <Transaction>2020/04/22 15:44:30.501,C:\![business]\202004～_自宅学習\Delphi\workspace\testUnit3\Unit3.pas=C:\![business]\202004～_自宅学習\Delphi\workspace\Unit3.pas</Transaction>
+    <Transaction>2020/04/22 15:44:30.501,C:\![business]\202004～_自宅学習\Delphi\workspace\testUnit3\Unit3.dfm=C:\![business]\202004～_自宅学習\Delphi\workspace\Unit3.dfm</Transaction>
   </Transactions>
 </BorlandProject>
