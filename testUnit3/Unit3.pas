@@ -209,4 +209,5 @@ begin
    Memo1.SelText := strDate;
 end;
 
+
 end.
