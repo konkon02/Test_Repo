@@ -4,13 +4,25 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Menus, Unit5;
 
 type
   TForm4 = class(TForm)
     Image1: TImage;
+    PopupMenu1: TPopupMenu;
+    N1: TMenuItem;
+    N2: TMenuItem;
+    N3: TMenuItem;
+    N4: TMenuItem;
+    N5: TMenuItem;
     procedure makec;
     procedure FormCreate(Sender: TObject);
+    procedure Image1MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
+    procedure N1Click(Sender: TObject);
+    procedure N2Click(Sender: TObject);
+    procedure N4Click(Sender: TObject);
+    procedure N5Click(Sender: TObject);
   private
     { Private 宣言 }
     ye,mo:string;
@@ -37,6 +49,14 @@ begin
    mo:=formatdatetime('m',date);    //“今日”の月を求めます。
    size:=400;                       //“size”をとりあえず４００にしてみます。
    makec;
+end;
+
+procedure TForm4.Image1MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+  if ssright in Shift then begin                 //マウスの右ボタンを押したとき
+     popupmenu1.Popup(form4.left+x,form4.top+y); //Ｘ座標：form1.Left+x，Y座標：form1.Top+yの
+  end;                                           //ところにポップアップメニューを表示させる
 end;
 
 procedure TForm4.makec;
@@ -155,6 +175,36 @@ begin
                 inttostr(i)); //日付を書き込む
       end;
    end;
+end;
+
+procedure TForm4.N1Click(Sender: TObject); //「次の月」をクリックしたとき
+begin
+  mo:=inttostr(strtoint(mo)+1);    //月の数字を１つ大きくする
+  if mo='13' then begin            //もし，月が１３になったら
+     ye:=inttostr(strtoint(ye)+1); //西暦を１つ大きくする
+     mo:='1';                      //月を１にする
+  end;
+  makec; //カレンダーを作る
+end;
+
+procedure TForm4.N2Click(Sender: TObject); //「前の月」をクリックしたとき
+begin
+  mo:=inttostr(strtoint(mo)-1);     //月の数字を１つ小さくする
+  if mo='0' then begin            //もし月が０になったら
+     ye:=inttostr(strtoint(ye)-1); //西暦を１つ少なくする
+     mo:='12';                     //月を１２にする
+  end;
+  makec; //カレンダーをつくる
+end;
+
+procedure TForm4.N4Click(Sender: TObject); //「設定」を押したとき
+begin
+  Form5.showmodal; //form5（設定）を開く
+end;
+
+procedure TForm4.N5Click(Sender: TObject); //「終了」を押したとき
+begin
+  form4.Close; // form4を終了する
 end;
 
 end.
